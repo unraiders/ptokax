@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ptokax</Name>
+  <Repository>ruben69695/ptokax</Repository>
+  <Registry>https://hub.docker.com/r/ruben69695/ptokax/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/ruben69695/ptokax-dockerfile</Support>
+  <Project/>
+  <Overview>&#xD;
+    PtokaX hub server is a server designed for flexible sharing of files or directories within groups of people in a local network or over internet.&#xD;
+    &#xD;
+    Default user: main&#xD;
+    Default pass: main123&#xD;
+    &#xD;
+    See instructions: https://github.com/ruben69695/ptokax-dockerfile?tab=readme-ov-file&#xD;
+    &#xD;
+    </Overview>
+  <Category>File sharing:Direct Connect</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://wiki.ptokax.org/lib/exe/fetch.php?media=wiki:logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725884520</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="config" Target="/src/cfg" Default="/mnt/user/appdata/ptokax/config" Mode="rw" Description="/src/cfg" Type="Path" Display="{6}" Required="{7}" Mask="{8}">/mnt/user/appdata/ptokax/config</Config>
+  <Config Name="logs" Target="/src/logs" Default="/mnt/user/appdata/ptokax/logs" Mode="rw" Description="/src/logs" Type="Path" Display="{6}" Required="{7}" Mask="{8}">/mnt/user/appdata/ptokax/logs</Config>
+  <Config Name="tcp" Target="411" Default="54400" Mode="tcp" Description="411/tcp" Type="Port" Display="{6}" Required="{7}" Mask="{8}">54400</Config>
+</Container>
